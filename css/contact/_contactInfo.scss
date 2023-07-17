@@ -1,8 +1,19 @@
 .contact__info {
-    background-image: url("../../image/contact/contactBg.png");
+    position: relative;
     padding: 50px 40px;
-    height: 647px;
+    background-color: #21364b;
     width: 491px;
+    height: 647px;
+    border-radius: 25px;
+    &-bg {
+        background-image: url("../../image/contact/contactBg.png");
+        background-repeat: no-repeat;
+        width: 283px;
+        position: absolute;
+bottom: -107px;
+right: 0;
+        height: 300px;
+    }
     .contact__box {
         display: flex;
         flex-direction: column;

@@ -2,23 +2,23 @@
 @import "./rightSide";
 
 .hero {
-    height: 850px;
-    background-color: #21364b;
+     background-color: #21364B;
     position: relative;
-    &__bgImage {
-        background-image: url("../../image/Subtract.png");
-        height: 248px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        bottom: -80px;
-        width: 275px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    height: 900px;
 
-    &__params{
-        background-image: url("../../image/params.png");
+
+    // &__bgImage {
+    //         background-image: url("../../image/heroBg.png");
+    //         height: 100%;
+    //         background-repeat: no-repeat;
+    //         background-size: cover;
+    //         position: absolute;
+    //         width: 100%;
+    //         background-position: center bottom; /* Adjust this property to position the background image */
+    // }
+
+    &__params {
+        background-image: url("../../image/pattern.png");
         height: 248px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -26,9 +26,48 @@
         width: 100%;
     }
 
-    &Flex{
+    &Flex {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+ 
+}
+@media (max-width: 1200px) {
+    .hero {
+        height: 100%;
+        padding: 20px 0;
+        &Flex {
+            display: block;
+            justify-content: center;
+            text-align: center;
+
+            .scroll__box {
+                display: none;
+            }
+        }
+
+        &__leftSide{
+            padding-top: 60px;
+            width: 100%;
+        }
+
+        &__rightSide{
+            .heroForm{
+                width: 100%;
+
+                &__form{
+                    &-submit,
+                    &-input{
+                        width: 80%;
+                    }
+                }
+               
+            }
+        }
     }
 }
+
+

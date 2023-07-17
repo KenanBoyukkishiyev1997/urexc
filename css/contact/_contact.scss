@@ -2,7 +2,7 @@
 @import './contatctForm';
 
 .contact{
-    padding: 10px;
+    padding: 10px 0;
     &__flex{
         display: flex;
         align-items: center;
@@ -10,5 +10,52 @@
 
 
        
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .contact {
+        &__flex {
+           display: block;
+           
+        }
+
+        &__form{
+            width: 100%;
+
+            input{
+
+                &:first-child {
+                    margin-right: 0px;
+                }
+            }
+
+            &-flex{
+                display: block;
+            }
+
+            &-btn{
+                width: 100%;
+            }
+        }
+
+        &__info{
+            width: 100%;
+            height: 647px;
+            margin-bottom: 50px;
+            .contact__box-info {
+                
+                span{
+                    width: 100%;
+                }
+
+            }
+            &-bg{
+                width: 100%;
+            }
+        }
+
+      
     }
 }

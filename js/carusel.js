@@ -21,23 +21,17 @@ export function carusel() {
         // centerMode: true,
         responsive: [
             {
-              breakpoint: 1280,
-              settings: {
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 700,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 2
               }
             },
             {
-                breakpoint: 500,
-                settings: {
-                  slidesToShow: 1
-                }
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1
               }
+            }
           ]
 
     });

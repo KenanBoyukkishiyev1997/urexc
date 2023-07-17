@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urexc ~ Home</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./image/logo/logo.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -13,6 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
+
+    <link rel="stylesheet" href="./css/nice-select2.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -59,13 +63,38 @@
                 <span class="register__addList-text">Login/Register</span>
               </div>
             </div>
+
+            <div class="responHeader">
+              <a class="toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+              </a>
+              <div class="menu-drawer">
+                <ul>
+                  <li><a href="#">Platform</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Who we serve</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li>
+                    <a href="#"
+                      >
+                    Login/Register
+                </a>
+                  </li>
+
+                  <li>
+                    <a href="#">  Login/Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </header>
 
       <section id="hero" class="hero">
-        <!-- <div class="hero__bgImage"></div> -->
-        <!-- <div class="hero__params"></div> -->
+        <div class="hero__bgImage"></div>
 
         <div class="container">
           <div class="heroFlex">
@@ -95,11 +124,12 @@
                   </div>
 
                   <div class="heroForm__form-group">
-                    <input
-                      class="heroForm__form-input"
-                      type="text"
-                      placeholder="New York, San Francisco, etc"
-                    />
+                    <select class="heroForm__form-input" id="seachable-select">
+                      <option disabled selected>Select Property Type</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3">Potato</option>
+                    </select>
                   </div>
 
                   <div class="heroForm__form-group">
@@ -111,18 +141,19 @@
                   </div>
                 </form>
               </div>
-
-              <a href="#about">
-                <div class="scroll">
-                  <span class="scroll-text">scroll</span>
-                  <span
-                    ><img
-                      class="scroll-icon"
-                      src="./image/icon/scrollArrow.png"
-                      alt="scrollArrow"
-                  /></span>
-                </div>
-              </a>
+              <div class="scroll__box">
+                <a href="#about">
+                  <div class="scroll">
+                    <span class="scroll-text">scroll</span>
+                    <span
+                      ><img
+                        class="scroll-icon"
+                        src="./image/icon/scrollArrow.png"
+                        alt="scrollArrow"
+                    /></span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -420,6 +451,7 @@
         <div class="container">
           <div class="contact__flex">
             <div class="contact__info">
+              <div class="contact__info-bg"></div>
               <div class="contact__box">
                 <h1 class="contact__box-title">Contact Information</h1>
                 <div class="contact__box-info">
@@ -539,19 +571,30 @@
               </ul>
             </div>
             <div class="footer__forth">
-                <h2 class="footer__title">Subscribe to our Newsletter!</h2>
+              <h2 class="footer__title">
+                Subscribe to our <br />
+                Newsletter!
+              </h2>
 
               <div class="footer__form">
-                <input type="email" name="" id="" />
-                <img src="" alt="" />
+                <input type="email" name="" id="" placeholder="Email Addres" />
+                <button type="submit" class="footer__form-box">
+                  <img src="./image/footer/icon/arrow.svg" alt="arrow" />
+                </button>
               </div>
 
               <h1 class="footer__title">Follow Us on</h1>
 
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="footer__sosial">
+                <img src="./image/footer/icon/linkdin.svg" alt="linkdin.svg" />
+                <img
+                  src="./image/footer/icon/facebook.svg"
+                  alt="facebook.svg"
+                />
+                <img
+                  src="./image/footer/icon/instagram.svg"
+                  alt="instagram.svg"
+                />
               </div>
             </div>
           </div>

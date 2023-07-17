@@ -171,3 +171,24 @@
         }
     }
 }
+
+
+@media (max-width: 1200px) {
+    .price {
+        &__flex {
+           display: block;
+           
+        }
+
+        &__box{
+            text-align: center;
+            margin-bottom: 10px;
+
+            &-item{
+                justify-content: center;
+            }
+        }
+
+      
+    }
+}

@@ -1,18 +1,62 @@
 @import './logo';
 @import './menuLinks';
 @import './register';
+@import './responsNav';
 
 header{
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
+
+   
+
+    .header{
+        margin-top: 21px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .responHeader{
+            display: none;
+           }
+    
+    }
 }
-.header{
-    margin-top: 21px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.removeScroll{
+    background-color: transparent;
 
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    padding: 0;
+}
+
+ .activeHeader{
+    background-color: #21364B;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    padding: 10px 0;
+    margin: 0;
+
+    .header{
+    margin: 0;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        .header__list,
+        .register{
+            display: none;
+        }
+
+
+        .responHeader{
+            display: block !important;
+           }
+    
+    }
 }

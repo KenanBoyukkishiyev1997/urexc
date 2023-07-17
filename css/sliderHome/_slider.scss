@@ -1,6 +1,6 @@
 .slider {
     background-color: #f8f8f8;
-    padding: 50px;
+    padding: 50px 0;
 
     &__itemTitle {
         display: flex;
@@ -40,7 +40,6 @@
         }
         &-btn {
             width: 80px;
-            height: 59px;
             padding: 18px 30px 18px 30px;
             border-radius: 30px;
             border: 1px solid #21364b;
@@ -125,6 +124,36 @@
             img {
                 width: 100%;
             }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .slider{
+        &__itemTitle {
+            display: block;
+
+            &Box {
+                width: 100%;
+            }
+
+            &-btn {
+                margin-top: 20px;
+            width: 100%;
+            }
+        }
+
+
+        &Carusel__box{
+            text-align: center;
+        }
+        &Carusel__image {
+            width: 100%;
+padding: 10px;
+
+           
         }
     }
 }
