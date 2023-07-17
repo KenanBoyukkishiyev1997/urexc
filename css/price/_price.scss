@@ -1,0 +1,173 @@
+.price {
+    background: radial-gradient(115.5% 115.5% at 50% 50%, #023160 0%, #1c2e41 51.56%, #305173 100%);
+    padding-top: 85px;
+
+    padding-bottom: 24px;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__box {
+        background-color: #fff;
+        padding: 56px 43px;
+        width: auto;
+        margin-right: 14px;
+        border-radius: 24px;
+        border: 1px solid #eff0f6;
+        box-shadow: 0px 2px 12px 0px #14142b14;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transition: transform background 0.3s ease-in;
+            background-color: #21364b;
+            transform: translateY(-30px);
+            .price__box-individuals {
+                color: #eff0f6;
+                transition: color 0.3s ease-in;
+            }
+
+            .price__box-title {
+                color: #fff;
+                transition: color 0.3s ease-in;
+            }
+
+            .price__box-title {
+                color: #d9dbe9;
+                transition: color 0.3s ease-in;
+            }
+
+            .price__box-price {
+                color: #fff;
+                transition: color 0.3s ease-in;
+            }
+
+            .price__box-month {
+                color: #d9dbe9;
+                transition: color 0.3s ease-in;
+            }
+
+            .price__box-included {
+                color: #fff;
+                transition: color 0.3s ease-in;
+            }
+
+            .price__box-item {
+                color: #d9dbe9;
+                transition: color 0.3s ease-in;
+
+                .rounded {
+                    background-color: #fff;
+                    transition: background 0.3s ease-in;
+                    img {
+                        transition: filter 0.3s ease-in;
+
+                        filter: brightness(30%);
+                    }
+                }
+            }
+
+            .price__box-btn {
+                background-color: #fff;
+                color: #21364b;
+                transition: color background 0.3s ease-in;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &-individuals {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #6f6c90;
+        }
+        &-title {
+            font-family: "DM Sans", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 35px;
+            color: #170f49;
+        }
+        &-desc {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #6f6c90;
+        }
+        &-price {
+            font-family: "DM Sans", sans-serif;
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 66px;
+            color: #170f49;
+        }
+        &-month {
+            font-family: "DM Sans", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22px;
+            color: #6f6c90;
+            margin-bottom: 20px;
+        }
+        &-included {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 24px;
+            margin-top: 20px;
+        }
+
+        &-list {
+            list-style: none;
+            margin-bottom: 50px;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #170f49;
+
+            .rounded {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 26px;
+                height: 26px;
+                background-color: #21364b;
+                border-radius: 50%;
+                margin-right: 14px;
+
+                img {
+                    width: 11px;
+                    height: 8px;
+                }
+            }
+        }
+        &-btn {
+            width: auto;
+            padding: 26px 38px 26px 38px;
+            border-radius: 96px;
+            background-color: #21364b;
+
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

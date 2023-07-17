@@ -1,0 +1,18 @@
+@import './logo';
+@import './menuLinks';
+@import './register';
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.header{
+    margin-top: 21px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

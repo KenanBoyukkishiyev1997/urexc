@@ -1,0 +1,55 @@
+.contact__form {
+    &-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 34px;
+    }
+    &-flex {
+        display: flex;
+        align-items: center;
+
+        &-input {
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &-input {
+        width: 100%;
+        border-radius: 11px;
+        padding: 15px;
+        border: 1px solid #f0f0f3;
+
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 12px;
+        background-color: #f6f6f6;
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    &-end{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    &-btn {
+        border-radius: 11px;
+        color: #fff;
+        background-color: #21364b;
+border: 1px solid #21364B;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 23px;
+        padding: 15px 38px;
+        cursor: pointer;
+    }
+}

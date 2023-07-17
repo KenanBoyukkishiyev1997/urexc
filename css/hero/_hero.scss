@@ -1,0 +1,34 @@
+@import "./leftSide";
+@import "./rightSide";
+
+.hero {
+    height: 850px;
+    background-color: #21364b;
+    position: relative;
+    &__bgImage {
+        background-image: url("../../image/Subtract.png");
+        height: 248px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: -80px;
+        width: 275px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__params{
+        background-image: url("../../image/params.png");
+        height: 248px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+    }
+
+    &Flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,130 @@
+.slider {
+    background-color: #f8f8f8;
+    padding: 50px;
+
+    &__itemTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        &Box {
+            width: 718px;
+            &-upTitle {
+                font-family: "Poppins", sans-serif;
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0.15em;
+                color: #21364b;
+            }
+
+            &-title {
+                font-family: "Poppins", sans-serif;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 47px;
+                color: #2b2b2b;
+            }
+
+            &-text {
+                color: #808080;
+
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+        &-btn {
+            width: 80px;
+            height: 59px;
+            padding: 18px 30px 18px 30px;
+            border-radius: 30px;
+            border: 1px solid #21364b;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #21364b;
+        }
+    }
+
+    &Carusel {
+        &__box {
+            &-price {
+                font-family: "Poppins", sans-serif;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 41px;
+                color: #2b2b2b;
+                margin-top: 32px;
+                margin-bottom: 10px;
+            }
+            &-title {
+                font-family: "Poppins", sans-serif;
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 29px;
+                color: #2b2b2b;
+                padding-bottom: 10px;
+            }
+            &-adress {
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #808080;
+            }
+        }
+        .popular {
+            background-color: #ffe1e1;
+            color: #ff1111;
+        }
+
+        .price {
+            background-color: #f1fff1;
+            color: #00ce3a;
+        }
+
+        .listing {
+            background-color: #d7eeff;
+            color: #119bff;
+        }
+        .category {
+            width: 141px;
+            height: 42.51px;
+            padding: 10px 24px 10px 24px;
+            border-radius: 20px;
+            gap: 10px;
+            display: flex;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+
+            img {
+                width: 20px;
+                height: 22px;
+            }
+        }
+
+        &__image {
+            position: relative;
+            width: 340px;
+
+            border-radius: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

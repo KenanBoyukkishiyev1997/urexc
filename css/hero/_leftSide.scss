@@ -1,0 +1,29 @@
+.hero__leftSide {
+    padding-top: 245px;
+    width: 580px;
+    &-upTitle {
+        font-family: "Poppins", sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 29px;
+        color: #2E5880;
+    }
+
+    &-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 57px;
+        font-weight: 600;
+        line-height: 65px;
+        color: #fff;
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    &-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    color: #CECECE;
+    }
+}
