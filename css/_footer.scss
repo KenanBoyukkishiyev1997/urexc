@@ -83,8 +83,7 @@
         }
         span{
             display: flex;
-            align-items: center;
-            justify-content: center;
+           
             a{
                 color: #2B2B2B;
             }
@@ -112,6 +111,11 @@
         }
         &__first {
             width: 100%;
+
+            span{
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         &__form {
