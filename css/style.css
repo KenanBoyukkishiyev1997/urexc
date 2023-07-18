@@ -1539,6 +1539,34 @@ header .header .responHeader {
   }
 }
 
+@media (max-width: 900px) {
+  .price__box {
+    padding: 20px 10px;
+  }
+  .price__box-individuals {
+    font-size: 12px;
+  }
+  .price__box-title {
+    font-size: 18px;
+  }
+  .price__box-desc {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .price__box-price {
+    font-size: 25px;
+  }
+  .price__box-month {
+    font-size: 20px;
+  }
+  .price__box-included {
+    font-size: 14px;
+  }
+  .price__box-list {
+    margin-bottom: 30px;
+  }
+}
+
 .contact__info {
   position: relative;
   padding: 50px 40px;
@@ -1721,6 +1749,43 @@ header .header .responHeader {
   }
   .contact__info-bg {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact__info {
+    padding: 30px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .contact__info-bg {
+    bottom: -180px;
+    right: -200px;
+  }
+  .contact__info .contact__box-info span {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 30px;
+  }
+  .contact__info .contact__box-info span img {
+    margin: 0;
+  }
+  .contact__info .contact__box-title {
+    font-size: 18px;
+    margin-bottom: 30px;
   }
 }
 

@@ -154,32 +154,32 @@
     }
 }
 
-
 @media (max-width: 900px) {
-
-    .slider{
+    .slider {
         padding: 0;
-        &__itemTitleBox-upTitle{
+        &__itemTitleBox-upTitle {
             font-size: 14px;
         }
 
-        &__itemTitleBox-title{
+        &__itemTitleBox-title {
             font-size: 18px;
             margin: 0;
         }
 
-        &__itemTitleBox-text{
+        &__itemTitleBox-text {
             font-size: 14px;
         }
 
-        &Carusel__box{
-            &-title{font-size: 18px;}
+        &Carusel__box {
+            &-title {
+                font-size: 18px;
+            }
 
-            &-price{
+            &-price {
                 font-size: 18px;
                 margin: 0;
             }
-        } 
+        }
 
         &Carusel__image {
             padding: 0px;

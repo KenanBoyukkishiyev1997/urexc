@@ -192,3 +192,44 @@
       
     }
 }
+
+
+
+@media (max-width: 900px) {
+    .price {
+      
+&__box{
+    padding: 20px 10px;
+
+    &-individuals{
+        font-size: 12px;
+    }
+    &-title{
+        font-size: 18px;
+    }
+
+    &-desc{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    &-price{
+        font-size: 25px;
+    }
+
+    &-month{
+        font-size: 20px;
+    }
+
+    &-included{
+        font-size: 14px;
+    }
+
+    &-list{
+        margin-bottom: 30px;
+    }
+}
+
+      
+    }
+}

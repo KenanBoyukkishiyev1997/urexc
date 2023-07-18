@@ -1,61 +1,86 @@
-@import './contactInfo';
-@import './contatctForm';
+@import "./contactInfo";
+@import "./contatctForm";
 
-.contact{
+.contact {
     padding: 10px 0;
-    &__flex{
+    &__flex {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-
-       
     }
 }
-
 
 @media (max-width: 1200px) {
     .contact {
         &__flex {
-           display: block;
-           
+            display: block;
         }
 
-        &__form{
+        &__form {
             width: 100%;
 
-            input{
-
+            input {
                 &:first-child {
                     margin-right: 0px;
                 }
             }
 
-            &-flex{
+            &-flex {
                 display: block;
             }
 
-            &-btn{
+            &-btn {
                 width: 100%;
             }
         }
 
-        &__info{
+        &__info {
             width: 100%;
             height: 647px;
             margin-bottom: 50px;
             .contact__box-info {
-                
-                span{
+                span {
                     width: 100%;
                 }
-
             }
-            &-bg{
+            &-bg {
                 width: 100%;
             }
         }
+    }
+}
 
-      
+@media (max-width: 900px) {
+    .contact {
+        &__info {
+            padding: 30px ;
+            height: 400px;
+            overflow: hidden;
+            text-align: center;
+            &-bg {
+                bottom: -180px;
+                right: -200px;
+            }
+
+            .contact__box {
+                &-info {
+                    span {
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+padding-bottom: 30px;
+                        img{
+                            margin: 0;
+                        }
+                    }
+                }
+                &-title {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
 }
