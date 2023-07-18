@@ -81,6 +81,12 @@
         &-logo {
             margin-bottom: 32px;
         }
+        span{
+            display: flex;
+            a{
+                color: #2B2B2B;
+            }
+        }
 
         &-text {
             font-family: "Poppins", sans-serif;

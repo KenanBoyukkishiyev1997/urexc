@@ -1,13 +1,13 @@
 import { carusel } from './carusel.js';
-import {niceSelect} from './nice-select2.js'
+ import {form} from './form.js'
 import {scrollHeader} from './scrollHeader.js'
 carusel();
 scrollHeader()
-niceSelect()
+ form()
 
 
-let options = {searchable: true, placeholder: 'select', searchtext: 'search', selectedtext: 'geselecteerd'};
-NiceSelect.bind(document.getElementById("seachable-select"), options);
+// let options = {searchable: true, placeholder: 'select', searchtext: 'search', selectedtext: 'geselecteerd'};
+// NiceSelect.bind(document.getElementById("seachable-select"), options);
 
 
 

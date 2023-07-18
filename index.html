@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
 
-    <link rel="stylesheet" href="./css/nice-select2.css" />
+    <!-- <link rel="stylesheet" href="./css/nice-select2.css" /> -->
   </head>
   <body>
     <div class="wrapper">
@@ -123,7 +123,6 @@
                     <div class="heroForm__form-group">
                       <select
                         class="heroForm__form-input"
-                        id="seachable-select"
                       >
                         <option disabled selected>Select Property Type</option>
                         <option value="1">Some option</option>
@@ -487,8 +486,8 @@
                   placeholder="Name"
                 />
                 <select
+                onchange="handleDropdownChange(event)"
                 class="contact__form-input"
-                id="seachable-select"
               >
                 <option disabled selected>Mövzu</option>
                 <option value="1">Some option</option>
@@ -531,8 +530,8 @@
 
               <div class="footer__first-text">
                 <span
-                  ><img src="./image/footer/icon/phone.svg" alt="phone" /> +1
-                  206-214-2298</span
+                  ><img src="./image/footer/icon/phone.svg" alt="phone" />
+                  <a href="tel:+1 206-214-2298">+1 206-214-2298</a>  </span
                 >
               </div>
               <div class="footer__first-text">
