@@ -1,18 +1,20 @@
 export function form(){
-    function handleDropdownChange(event) {
-        const dropdown = event.target;
-        const selectedIndex = dropdown.selectedIndex;
-        const nextInput = getNextInput(selectedIndex);
+    function handleInputKeyDown(event) {
+        if (event.key === 'Enter') {
+          const currentInput = event.target;
+          const nextInput = getNextInput(currentInput);
       
-        if (nextInput) {
-          event.preventDefault(); // Prevent form submission
-          nextInput.focus(); // Focus on the next input field
+          if (nextInput) {
+            event.preventDefault(); // Prevent form submission
+            nextInput.focus(); // Focus on the next input field
+          }
         }
       }
       
-      function getNextInput(selectedIndex) {
-        const inputs = document.querySelectorAll('input[type="text"]');
-        const nextIndex = selectedIndex + 1;
+      function getNextInput(currentInput) {
+        const inputs = document.querySelectorAll('.contact__form-input');
+        const currentIndex = Array.from(inputs).indexOf(currentInput);
+        const nextIndex = currentIndex + 1;
       
         if (nextIndex < inputs.length) {
           return inputs[nextIndex];

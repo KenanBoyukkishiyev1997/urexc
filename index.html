@@ -484,6 +484,8 @@
                   type="text"
                   class="contact__form-input"
                   placeholder="Name"
+                  onkeydown="handleInputKeyDown(event)"
+
                 />
                 <select
                 onchange="handleDropdownChange(event)"
@@ -495,9 +497,12 @@
                 <option value="3">Potato</option>
               </select>              </div>
 
-              <input placeholder="E-mail" type="email" class="contact__form-input" />
+              <input placeholder="E-mail" type="email" class="contact__form-input"   onkeydown="handleInputKeyDown(event)"
+              />
 
               <textarea
+              onkeydown="handleInputKeyDown(event)"
+
                 class="contact__form-input"
                 name=""
                 placeholder="Mesajınızı daxil edin.."
