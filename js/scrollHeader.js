@@ -19,6 +19,17 @@ export function scrollHeader() {
       .scroll(); // Trigger the scroll event on page load
   });
 
+  window.addEventListener('scroll', function() {
+    const circle = document.querySelector('.circle');
+    const scrollPosition = window.scrollY;
+  
+    if (scrollPosition > 200) {
+      circle.classList.add('scroll-up');
+    } else {
+      circle.classList.remove('scroll-up');
+    }
+  });
+
   $(function() {
     const toggleMenu = $(".toggle-menu");
     const menuDrawer = $(".menu-drawer");

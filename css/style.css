@@ -777,7 +777,7 @@ header .header .responHeader {
 }
 
 .hero__rightSide .scroll {
-  margin-top: 40px;
+  margin-top: 150px;
   background-color: #02172c;
   width: 54px;
   height: 120px;
@@ -855,19 +855,109 @@ header .header .responHeader {
   }
 }
 
-.hero {
-  background-color: #21364B;
-  position: relative;
-  height: 900px;
+.circle {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 400px);
+          transform: translate(-50%, 400px);
+  -webkit-transition: -webkit-transform  0.3s ease-in-out;
+  transition: -webkit-transform  0.3s ease-in-out;
+  transition: transform  0.3s ease-in-out;
+  transition: transform  0.3s ease-in-out, -webkit-transform  0.3s ease-in-out;
+  opacity: 0;
 }
 
-.hero__params {
-  background-image: url("../../image/pattern.png");
-  height: 248px;
+.circle.scroll-up {
+  -webkit-transform: translate(-110px, 0);
+          transform: translate(-110px, 0);
+  opacity: 1;
+}
+
+.circle .logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("../../image/svg/play.svg");
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.circle .text {
   position: absolute;
   width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  -webkit-animation: textRotation 8s linear infinite;
+          animation: textRotation 8s linear infinite;
+}
+
+@-webkit-keyframes textRotation {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes textRotation {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.circle .text span {
+  position: absolute;
+  left: 50%;
+  top: 9%;
+  -webkit-transform-origin: 0 100px;
+          transform-origin: 0 100px;
+}
+
+.hero {
+  background-color: #21364b;
+  position: relative;
+  height: 1000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(6.809% 4.757%, 6.809% 4.757%, 6.267% 4.8%, 5.754% 4.922%, 5.275% 5.119%, 4.838% 5.382%, 4.449% 5.705%, 4.115% 6.082%, 3.844% 6.506%, 3.641% 6.971%, 3.515% 7.469%, 3.471% 7.994%, 3.471% 86.44%, 3.471% 86.44%, 3.515% 86.965%, 3.641% 87.463%, 3.844% 87.927%, 4.115% 88.351%, 4.449% 88.728%, 4.838% 89.052%, 5.275% 89.315%, 5.754% 89.511%, 6.267% 89.634%, 6.809% 89.676%, 36.048% 89.676%, 36.048% 89.676%, 36.891% 89.747%, 37.695% 89.949%, 38.46% 90.267%, 39.187% 90.685%, 39.875% 91.189%, 40.525% 91.761%, 41.137% 92.388%, 41.711% 93.053%, 42.248% 93.741%, 42.748% 94.436%, 42.748% 94.436%, 43.255% 95.097%, 43.824% 95.706%, 44.45% 96.26%, 45.129% 96.754%, 45.857% 97.184%, 46.629% 97.545%, 47.44% 97.834%, 48.286% 98.046%, 49.163% 98.176%, 50.066% 98.22%, 50.066% 98.22%, 50.97% 98.176%, 51.847% 98.046%, 52.693% 97.834%, 53.504% 97.545%, 54.276% 97.184%, 55.004% 96.754%, 55.683% 96.26%, 56.309% 95.706%, 56.878% 95.097%, 57.385% 94.436%, 57.385% 94.436%, 57.885% 93.741%, 58.422% 93.053%, 58.996% 92.388%, 59.608% 91.761%, 60.258% 91.189%, 60.946% 90.685%, 61.673% 90.267%, 62.438% 89.949%, 63.242% 89.747%, 64.085% 89.676%, 93.391% 89.676%, 93.391% 89.676%, 93.933% 89.634%, 94.446% 89.511%, 94.925% 89.315%, 95.362% 89.052%, 95.751% 88.728%, 96.085% 88.351%, 96.356% 87.927%, 96.559% 87.463%, 96.685% 86.965%, 96.729% 86.44%, 96.729% 7.994%, 96.729% 7.994%, 96.685% 7.469%, 96.559% 6.971%, 96.356% 6.506%, 96.085% 6.082%, 95.751% 5.705%, 95.362% 5.382%, 94.925% 5.119%, 94.446% 4.922%, 93.933% 4.8%, 93.391% 4.757%, 6.809% 4.757%);
+          clip-path: polygon(6.809% 4.757%, 6.809% 4.757%, 6.267% 4.8%, 5.754% 4.922%, 5.275% 5.119%, 4.838% 5.382%, 4.449% 5.705%, 4.115% 6.082%, 3.844% 6.506%, 3.641% 6.971%, 3.515% 7.469%, 3.471% 7.994%, 3.471% 86.44%, 3.471% 86.44%, 3.515% 86.965%, 3.641% 87.463%, 3.844% 87.927%, 4.115% 88.351%, 4.449% 88.728%, 4.838% 89.052%, 5.275% 89.315%, 5.754% 89.511%, 6.267% 89.634%, 6.809% 89.676%, 36.048% 89.676%, 36.048% 89.676%, 36.891% 89.747%, 37.695% 89.949%, 38.46% 90.267%, 39.187% 90.685%, 39.875% 91.189%, 40.525% 91.761%, 41.137% 92.388%, 41.711% 93.053%, 42.248% 93.741%, 42.748% 94.436%, 42.748% 94.436%, 43.255% 95.097%, 43.824% 95.706%, 44.45% 96.26%, 45.129% 96.754%, 45.857% 97.184%, 46.629% 97.545%, 47.44% 97.834%, 48.286% 98.046%, 49.163% 98.176%, 50.066% 98.22%, 50.066% 98.22%, 50.97% 98.176%, 51.847% 98.046%, 52.693% 97.834%, 53.504% 97.545%, 54.276% 97.184%, 55.004% 96.754%, 55.683% 96.26%, 56.309% 95.706%, 56.878% 95.097%, 57.385% 94.436%, 57.385% 94.436%, 57.885% 93.741%, 58.422% 93.053%, 58.996% 92.388%, 59.608% 91.761%, 60.258% 91.189%, 60.946% 90.685%, 61.673% 90.267%, 62.438% 89.949%, 63.242% 89.747%, 64.085% 89.676%, 93.391% 89.676%, 93.391% 89.676%, 93.933% 89.634%, 94.446% 89.511%, 94.925% 89.315%, 95.362% 89.052%, 95.751% 88.728%, 96.085% 88.351%, 96.356% 87.927%, 96.559% 87.463%, 96.685% 86.965%, 96.729% 86.44%, 96.729% 7.994%, 96.729% 7.994%, 96.685% 7.469%, 96.559% 6.971%, 96.356% 6.506%, 96.085% 6.082%, 95.751% 5.705%, 95.362% 5.382%, 94.925% 5.119%, 94.446% 4.922%, 93.933% 4.8%, 93.391% 4.757%, 6.809% 4.757%);
+  background-color: #21364b;
+  background-position: right top;
+  background-image: url("../../image/pattern.png");
+  background-repeat: no-repeat;
 }
 
 .heroFlex {
