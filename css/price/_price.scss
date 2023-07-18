@@ -177,7 +177,6 @@
     .price {
         &__flex {
            display: block;
-           
         }
 
         &__box{
@@ -185,6 +184,10 @@
             margin-right: 0;
             text-align: center;
             margin-bottom: 10px;
+
+            &:hover {
+                transform: translateY(0px);
+            }
 
             &-item{
                 justify-content: center;
@@ -236,7 +239,6 @@ font-size: 14px;
         margin-bottom: 30px;
     }
 }
-
       
     }
 }

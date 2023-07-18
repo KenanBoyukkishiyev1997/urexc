@@ -1585,6 +1585,10 @@ header .header .responHeader {
     text-align: center;
     margin-bottom: 10px;
   }
+  .price__box:hover {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
   .price__box-item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
