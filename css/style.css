@@ -364,33 +364,21 @@ template {
   display: none;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1380px;
-  }
-}
-
 @media (max-width: 1400px) {
   .container {
-    width: 1200px;
+    padding: 15px;
   }
 }
 
 @media (max-width: 1200px) {
   .container {
-    width: 900px;
+    padding: 10px;
   }
 }
 
 @media (max-width: 900px) {
   .container {
-    width: 600px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    width: 95%;
+    padding: 5px;
   }
 }
 
@@ -600,8 +588,8 @@ header .header .responHeader {
 
 .removeScroll {
   background-color: transparent;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -611,8 +599,8 @@ header .header .responHeader {
 
 .activeHeader {
   background-color: #21364B;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -1779,7 +1767,9 @@ header .header .responHeader {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 20px;
 }
 
 .container-left {
