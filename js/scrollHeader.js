@@ -5,7 +5,7 @@ export function scrollHeader() {
         let scrollDistance = $(window).scrollTop();
         // Adjust the "active" class based on the scroll position
         $(".about").each(function (i) {
-          if ($(this).position().top <= scrollDistance) {
+          if (100 <= scrollDistance) {
             $("header").removeClass("activeHeader");
             $("header").removeClass("removeScroll");
 

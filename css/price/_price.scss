@@ -197,9 +197,14 @@
 
 @media (max-width: 900px) {
     .price {
-      
+      padding-top: 20px;
 &__box{
     padding: 20px 10px;
+
+    &-btn{
+        padding: 10px 0 10px 0;
+font-size: 14px;
+    }
 
     &-individuals{
         font-size: 12px;
@@ -214,7 +219,7 @@
     }
 
     &-price{
-        font-size: 25px;
+        font-size: 40px;
     }
 
     &-month{

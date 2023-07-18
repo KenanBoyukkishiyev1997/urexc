@@ -88,6 +88,16 @@
         &__rightSide {
             .heroForm {
                 margin-top: 40px;
+
+               .heroForm__form-input{
+                font-size: 14px;
+                padding: 10px 16px;
+               }
+
+               .heroForm__form-submit{
+                font-size: 14px;
+                padding: 10px 16px;
+               }
             }
         }
     }

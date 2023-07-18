@@ -556,6 +556,7 @@ template {
 .menu-drawer li a {
   text-decoration: none;
   color: #555;
+  font-size: 20px;
 }
 
 .menu-drawer li a:hover {
@@ -605,7 +606,6 @@ header .header .responHeader {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  padding: 10px 0;
   margin: 0;
 }
 
@@ -619,7 +619,9 @@ header .header .responHeader {
     display: none;
   }
   .header .responHeader {
-    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 
@@ -1013,6 +1015,14 @@ header .header .responHeader {
   .hero__rightSide .heroForm {
     margin-top: 40px;
   }
+  .hero__rightSide .heroForm .heroForm__form-input {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+  .hero__rightSide .heroForm .heroForm__form-submit {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }
 
 .about {
@@ -1103,6 +1113,9 @@ header .header .responHeader {
 }
 
 @media (max-width: 900px) {
+  .about {
+    padding: 25px 0 0;
+  }
   .about__box-title {
     font-size: 18px;
   }
@@ -1540,8 +1553,15 @@ header .header .responHeader {
 }
 
 @media (max-width: 900px) {
+  .price {
+    padding-top: 20px;
+  }
   .price__box {
     padding: 20px 10px;
+  }
+  .price__box-btn {
+    padding: 10px 0 10px 0;
+    font-size: 14px;
   }
   .price__box-individuals {
     font-size: 12px;
@@ -1554,7 +1574,7 @@ header .header .responHeader {
     margin-top: 10px;
   }
   .price__box-price {
-    font-size: 25px;
+    font-size: 40px;
   }
   .price__box-month {
     font-size: 20px;
@@ -1812,7 +1832,6 @@ header .header .responHeader {
 .footer__form input {
   padding: 24px 20px;
   width: 350px;
-  height: 60px;
   border-radius: 10px;
   -webkit-box-shadow: 4px 10px 20px 0px #0000000d;
           box-shadow: 4px 10px 20px 0px #0000000d;
@@ -1826,13 +1845,14 @@ header .header .responHeader {
 }
 
 .footer__form-box {
-  right: 5px;
-  top: 5px;
+  right: 12px;
+  top: 12px;
   position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  background-color: #21364B;
+  background-color: #21364b;
+  border: 1px solid transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1907,6 +1927,28 @@ header .header .responHeader {
   }
   .footer__form input {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer__first-text {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .footer__title {
+    font-size: 14px;
+  }
+  .footer__list {
+    margin-top: 15px;
+  }
+  .footer__form input {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  .footer__form-box {
+    top: 6px;
+    height: 40px;
+    width: 40px;
   }
 }
 
