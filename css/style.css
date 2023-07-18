@@ -1020,6 +1020,9 @@ header .header .responHeader {
 }
 
 @media (max-width: 900px) {
+  .hero .circle {
+    left: 55%;
+  }
   .hero::before {
     top: 70px;
   }

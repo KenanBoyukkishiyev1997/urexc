@@ -81,6 +81,11 @@
 
 @media (max-width: 900px) {
     .hero {
+
+        .circle {
+          left: 55%;
+         
+        }
         &::before {
             top: 70px;
         }
