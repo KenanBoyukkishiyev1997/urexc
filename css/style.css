@@ -862,10 +862,10 @@ header .header .responHeader {
   left: 50%;
   -webkit-transform: translate(-50%, 400px);
           transform: translate(-50%, 400px);
-  -webkit-transition: -webkit-transform  0.3s ease-in-out;
-  transition: -webkit-transform  0.3s ease-in-out;
-  transition: transform  0.3s ease-in-out;
-  transition: transform  0.3s ease-in-out, -webkit-transform  0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -992,6 +992,29 @@ header .header .responHeader {
   }
 }
 
+@media (max-width: 900px) {
+  .hero::before {
+    top: 70px;
+  }
+  .hero__leftSide-upTitle {
+    font-size: 12px;
+  }
+  .hero__leftSide-title {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 0;
+  }
+  .hero__leftSide-text {
+    font-size: 13px;
+  }
+  .hero .circle {
+    display: none;
+  }
+  .hero__rightSide .heroForm {
+    margin-top: 40px;
+  }
+}
+
 .about {
   background-color: #f8f8f8;
   padding: 0 0 50px;
@@ -1038,7 +1061,6 @@ header .header .responHeader {
 
 .about__box-btn {
   width: 187px;
-  height: 60px;
   padding: 16px 28px 16px 28px;
   border-radius: 32px;
   border: 1px solid #21364b;
@@ -1053,19 +1075,43 @@ header .header .responHeader {
 }
 
 @media (max-width: 1200px) {
+  .about {
+    padding: 0;
+  }
   .about__page {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
     text-align: center;
   }
   .about__page-image {
     margin: 20px 0;
+    height: auto;
+  }
+  .about__page:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .about__box {
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__box-title {
+    font-size: 18px;
+  }
+  .about__box-text {
+    font-size: 12px;
+  }
+  .about__box-btn {
+    width: auto;
+    font-size: 14px;
   }
 }
 
@@ -1138,6 +1184,10 @@ header .header .responHeader {
   color: #21364b;
 }
 
+.sliderCarusel__box {
+  padding: 0 20px;
+}
+
 .sliderCarusel__box-price {
   font-family: "Poppins", sans-serif;
   font-size: 28px;
@@ -1205,7 +1255,7 @@ header .header .responHeader {
 
 .sliderCarusel__image {
   position: relative;
-  width: 340px;
+  width: 100%;
   border-radius: 30px;
 }
 
@@ -1230,6 +1280,32 @@ header .header .responHeader {
   .sliderCarusel__image {
     width: 100%;
     padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider {
+    padding: 0;
+  }
+  .slider__itemTitleBox-upTitle {
+    font-size: 14px;
+  }
+  .slider__itemTitleBox-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  .slider__itemTitleBox-text {
+    font-size: 14px;
+  }
+  .sliderCarusel__box-title {
+    font-size: 18px;
+  }
+  .sliderCarusel__box-price {
+    font-size: 18px;
+    margin: 0;
+  }
+  .sliderCarusel__image {
+    padding: 0px;
   }
 }
 

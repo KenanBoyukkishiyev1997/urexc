@@ -35,7 +35,6 @@
 
         &-btn {
             width: 187px;
-            height: 60px;
             padding: 16px 28px 16px 28px;
             border-radius: 32px;
             border: 1px solid #21364b;
@@ -51,19 +50,22 @@
     }
 }
 
-
-
 @media (max-width: 1200px) {
     .about {
+        padding: 0;
         &__page {
             flex-wrap: wrap;
             justify-content: center;
-
+            padding: 0;
             text-align: center;
 
             &-image {
                 margin: 20px 0;
-                
+                height: auto;
+            }
+
+            &:last-child {
+                flex-direction: column-reverse;
             }
         }
 
@@ -73,6 +75,22 @@
     }
 }
 
+@media (max-width: 900px) {
+    .about {
+        &__box-title {
+            font-size: 18px;
+        }
+
+        &__box-text {
+            font-size: 12px;
+        }
+
+        &__box-btn {
+            width: auto;
+            font-size: 14px;
+        }
+    }
+}
 
 @media (max-width: 800px) {
     .about {

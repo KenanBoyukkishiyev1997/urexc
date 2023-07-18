@@ -6,8 +6,8 @@
     background-color: #21364b;
     position: relative;
     height: 1000px;
-    
-   &::before {
+
+    &::before {
         content: "";
         position: absolute;
         top: 100px;
@@ -16,12 +16,10 @@
         height: 100%;
         @include hero-poligon;
         background-color: #21364b;
-background-position: right top;
+        background-position: right top;
         background-image: url("../../image/pattern.png");
         background-repeat: no-repeat;
-   }
-
-   
+    }
 
     &Flex {
         display: flex;
@@ -59,6 +57,37 @@ background-position: right top;
                         width: 80%;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        &::before {
+            top: 70px;
+        }
+        &__leftSide-upTitle {
+            font-size: 12px;
+        }
+
+        &__leftSide-title {
+            font-size: 18px;
+            line-height: 30px;
+            padding: 10px 0;
+        }
+
+        &__leftSide-text {
+            font-size: 13px;
+        }
+
+        .circle {
+            display: none;
+        }
+
+        &__rightSide {
+            .heroForm {
+                margin-top: 40px;
             }
         }
     }
