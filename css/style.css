@@ -883,6 +883,9 @@ header .header .responHeader {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  left: 55%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .circle .text {
