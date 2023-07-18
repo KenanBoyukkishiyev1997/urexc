@@ -121,10 +121,11 @@
                     </div>
 
                     <div class="heroForm__form-group">
-                      <select
+                      <select id="dropdownFirst"
+
                         class="heroForm__form-input"
                       >
-                        <option disabled selected>Select Property Type</option>
+                        <option value="" disabled selected>Select Property Type</option>
                         <option value="1">Some option</option>
                         <option value="2">Another option</option>
                         <option value="3">Potato</option>
@@ -463,11 +464,12 @@
                 <div class="contact__box-info">
                   <span>
                     <img src="./image/contact/svg/phone.svg" alt="phone" />
-                    +1012 3456 789
-                  </span>
+                    <a href="tel:+1 206-214-2298">+1 206-214-2298</a>                  </span>
                   <span>
                     <img src="./image/contact/svg/mail.svg" alt="mail" />
-                    demo@gmail.com
+                    
+                    <a href="mailto:demo@gmail.com">demo@gmail.com</a>                  </span>
+
                   </span>
                   <span>
                     <img src="./image/contact/svg/marker.svg" alt="marker" />
@@ -484,24 +486,23 @@
                   type="text"
                   class="contact__form-input"
                   placeholder="Name"
-                  onkeydown="handleInputKeyDown(event)"
 
                 />
                 <select
-                onchange="handleDropdownChange(event)"
+                id="dropdown"
+                
                 class="contact__form-input"
               >
-                <option disabled selected>Mövzu</option>
-                <option value="1">Some option</option>
-                <option value="2">Another option</option>
-                <option value="3">Potato</option>
+              <option value="" disabled selected>Mövzu</option>
+              <option value="1">Some option</option>
+              <option value="2">Another option</option>
+              <option value="3">Potato</option>
               </select>              </div>
 
-              <input placeholder="E-mail" type="email" class="contact__form-input"   onkeydown="handleInputKeyDown(event)"
+              <input placeholder="E-mail" type="email" class="contact__form-input"  
               />
 
               <textarea
-              onkeydown="handleInputKeyDown(event)"
 
                 class="contact__form-input"
                 name=""
@@ -542,7 +543,8 @@
               <div class="footer__first-text">
                 <span
                   ><img src="./image/footer/icon/letter.svg" alt="letter" />
-                  support@support.com</span
+                  <a href="mailto:support@support.com">support@support.com</a> 
+                  </span
                 >
               </div>
             </div>
@@ -630,5 +632,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script src="./js/script.js" type="module"></script>
+
+    
   </body>
 </html>

@@ -20,3 +20,12 @@ padding: 20px;
 .container-left{
     margin:  0 0 0 auto;
 }
+#dropdown,
+#dropdownFirst {
+    color: #ACACAC;
+
+    &.valid-option {
+        color: black;
+
+    }
+  }

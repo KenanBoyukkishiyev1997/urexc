@@ -712,7 +712,7 @@ header .header .responHeader {
   width: 340px;
   border-radius: 20px;
   background-color: #d4d4d433;
-  color: #d4d4d4;
+  color: black;
   border: 1px solid #d4d4d4;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -729,6 +729,22 @@ header .header .responHeader {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 0 auto;
+}
+
+.hero__rightSide .heroForm__form-input::-webkit-input-placeholder {
+  color: #ACACAC;
+}
+
+.hero__rightSide .heroForm__form-input:-ms-input-placeholder {
+  color: #ACACAC;
+}
+
+.hero__rightSide .heroForm__form-input::-ms-input-placeholder {
+  color: #ACACAC;
+}
+
+.hero__rightSide .heroForm__form-input::placeholder {
+  color: #ACACAC;
 }
 
 .hero__rightSide .heroForm__form-submit {
@@ -1202,7 +1218,6 @@ header .header .responHeader {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .slider__itemTitle-btn {
@@ -1300,6 +1315,7 @@ header .header .responHeader {
 
 @media (max-width: 1200px) {
   .slider__itemTitle {
+    text-align: center;
     display: block;
   }
   .slider__itemTitleBox {
@@ -1564,6 +1580,8 @@ header .header .responHeader {
     display: block;
   }
   .price__box {
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -1678,6 +1696,10 @@ header .header .responHeader {
   color: #fff;
 }
 
+.contact__info .contact__box-info span a {
+  color: #fff;
+}
+
 .contact__info .contact__box-info span img {
   margin-right: 25px;
 }
@@ -1718,6 +1740,22 @@ header .header .responHeader {
   color: #000000;
   margin-bottom: 12px;
   background-color: #f6f6f6;
+}
+
+.contact__form-input::-webkit-input-placeholder {
+  color: #ACACAC;
+}
+
+.contact__form-input:-ms-input-placeholder {
+  color: #ACACAC;
+}
+
+.contact__form-input::-ms-input-placeholder {
+  color: #ACACAC;
+}
+
+.contact__form-input::placeholder {
+  color: #ACACAC;
 }
 
 .contact__form-input:first-child {
@@ -2000,5 +2038,15 @@ header .header .responHeader {
 
 .container-left {
   margin: 0 0 0 auto;
+}
+
+#dropdown,
+#dropdownFirst {
+  color: #ACACAC;
+}
+
+#dropdown.valid-option,
+#dropdownFirst.valid-option {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
