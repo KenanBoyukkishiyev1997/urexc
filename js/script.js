@@ -11,6 +11,7 @@ NiceSelect.bind(document.getElementById("seachable-select"), options);
 
 
 
+
 const text = document.querySelector(".text");
 text.innerHTML = text.innerText
 	.split("")

@@ -1,3 +1,11 @@
+.nice-select {
+    float: unset !important;
+    padding: 30px 16px;
+}
+
+.nice-select-dropdown {
+    width: 100%;
+}
 .hero__rightSide {
     position: relative;
     .heroForm {
@@ -22,14 +30,13 @@
             }
         }
 
+
+
         &__form {
             &-group {
                 margin-top: 30px;
             }
-            .nice-select {
-                float: unset !important;
-                padding: 30px 16px;
-            }
+          
             &-input {
                 width: 340px;
                 border-radius: 20px;
@@ -46,9 +53,7 @@
                 justify-content: flex-start;
                 margin: 0 auto;
 
-                .nice-select-dropdown {
-                    width: 100%;
-                }
+               
             }
 
             &-submit {

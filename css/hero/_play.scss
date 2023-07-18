@@ -7,8 +7,9 @@
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    bottom: 0;
+    bottom: -107px;
     left: 50%;
+    transform: translate(-50%);   
     transform: translate(-50%, 400px);
     transition: transform 0.3s ease-in-out;
     opacity: 0;
