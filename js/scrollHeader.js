@@ -44,9 +44,19 @@ export function scrollHeader() {
         if (toggleMenu.hasClass("active")) {
           icon.eq(1).hide(); // Hide the middle arrow
           icon.css("background-color", "#21364B");
+          toggleMenu.css("position", "absolute")
+          toggleMenu.css("top", "20px")
+          toggleMenu.css("right", "20px")
+          menuDrawer.css("padding-top" , '100px')
+
         } else {
           icon.eq(1).show(); // Show the middle arrow
           icon.css("background-color", originalColor);
+          toggleMenu.css("position", "relative")
+          toggleMenu.css("top", "10px")
+          toggleMenu.css("right", "unset")
+          menuDrawer.css("padding-top" , '0px')
+
         }
       });
 

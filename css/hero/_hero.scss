@@ -9,6 +9,7 @@
     background-image: url("../../image/pattern.png");
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px 5px 15px rgba(33, 54, 75, 0.5); /* Add your desired box shadow */
 
     &::before {
         content: "";
@@ -20,7 +21,6 @@
         @include hero-poligon;
         background-color: #21364b;
        z-index: -1;
-       box-shadow: 0px 5px 15px rgba(33, 54, 75, 0.5); /* Add your desired box shadow */
 
     }
 
