@@ -1978,6 +1978,7 @@ header .header .responHeader {
 }
 
 .footer__form input {
+  height: 60px;
   padding: 24px 20px;
   width: 100%;
   border-radius: 10px;
@@ -1993,8 +1994,8 @@ header .header .responHeader {
 }
 
 .footer__form-box {
-  right: 12px;
-  top: 12px;
+  right: 5px;
+  top: 5px;
   position: absolute;
   width: 50px;
   height: 50px;
@@ -2093,6 +2094,11 @@ header .header .responHeader {
   }
   .footer__form input {
     width: 100%;
+    height: unset;
+  }
+  .footer__form-box {
+    right: 12px;
+    top: 12px;
   }
 }
 
