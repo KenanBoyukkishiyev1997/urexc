@@ -34,7 +34,7 @@
 @media (max-width: 1200px) {
 
     .circle {
-        width: 150px;
+        width: 140px;
         height: 140px;
         transform: translate(-70px, 0) !important;
         .logo {
@@ -43,11 +43,11 @@
         }
     
         .text {
-            font-size: 14px;
+            font-size: 10px;
         }
     
         .text span {
-            transform-origin: 0 56px;
+            transform-origin: 0 60px;
         }
     }
     .hero {
