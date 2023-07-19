@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
 
-    <!-- <link rel="stylesheet" href="./css/nice-select2.css" /> -->
   </head>
   <body>
     <div class="wrapper">
@@ -121,15 +120,17 @@
                     </div>
 
                     <div class="heroForm__form-group">
-                      <select id="dropdownFirst"
+                    
 
-                        class="heroForm__form-input"
-                      >
-                        <option value="" disabled selected>Select Property Type</option>
-                        <option value="1">Some option</option>
-                        <option value="2">Another option</option>
-                        <option value="3">Potato</option>
-                      </select>
+                      <div class="custom-select heroForm__form-input">
+                        <div class="select-label heroForm__form-lable">Select an option</div>
+                        <ul class="options">
+                          <li data-value="option1">Option 1</li>
+                          <li data-value="option2">Option 2</li>
+                          <li data-value="option3">Option 3</li>
+                        </ul>
+                        <input type="hidden" name="selected-option" value="">
+                      </div>
                     </div>
 
                     <div class="heroForm__form-group">
@@ -488,7 +489,7 @@
                   placeholder="Name"
 
                 />
-                <select
+                <!-- <select
                 id="dropdown"
                 
                 class="contact__form-input"
@@ -497,7 +498,19 @@
               <option value="1">Some option</option>
               <option value="2">Another option</option>
               <option value="3">Potato</option>
-              </select>              </div>
+              </select>     -->
+
+              <div class="custom-select contact__form-input">
+                <div class="select-label contact__form-lable">Mövzu</div>
+                <ul class="options">
+                  <li data-value="option1">Option 1</li>
+                  <li data-value="option2">Option 2</li>
+                  <li data-value="option3">Option 3</li>
+                </ul>
+                <input type="hidden" name="selected-option" value="">
+              </div>
+            
+            </div>
 
               <input placeholder="E-mail" type="email" class="contact__form-input"  
               />

@@ -372,6 +372,45 @@ template {
   display: none;
 }
 
+/* Styling for the custom select container */
+.custom-select {
+  position: relative;
+  cursor: pointer;
+  /* Styling for the select label */
+  /* Styling for the options dropdown */
+}
+
+.custom-select .options {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.custom-select .options li {
+  padding: 8px 12px;
+}
+
+.custom-select .options li.selected {
+  background-color: #f0f0f0;
+}
+
+.custom-select .options input[type="hidden"] {
+  display: none;
+}
+
 @media (max-width: 1400px) {
   .container {
     padding: 15px;
@@ -666,15 +705,6 @@ header .header .responHeader {
   color: #CECECE;
 }
 
-.nice-select {
-  float: unset !important;
-  padding: 30px 16px;
-}
-
-.nice-select-dropdown {
-  width: 100%;
-}
-
 .hero__rightSide {
   position: relative;
 }
@@ -708,6 +738,14 @@ header .header .responHeader {
   margin-top: 30px;
 }
 
+.hero__rightSide .heroForm__form-lable {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #acacac;
+}
+
 .hero__rightSide .heroForm__form-input {
   width: 340px;
   border-radius: 20px;
@@ -732,19 +770,19 @@ header .header .responHeader {
 }
 
 .hero__rightSide .heroForm__form-input::-webkit-input-placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .hero__rightSide .heroForm__form-input:-ms-input-placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .hero__rightSide .heroForm__form-input::-ms-input-placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .hero__rightSide .heroForm__form-input::placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .hero__rightSide .heroForm__form-submit {
@@ -881,13 +919,11 @@ header .header .responHeader {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   bottom: -107px;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
   -webkit-transform: translate(-50%, 400px);
           transform: translate(-50%, 400px);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -898,15 +934,15 @@ header .header .responHeader {
 }
 
 .circle.scroll-up {
-  -webkit-transform: translate(-110px, 0);
-          transform: translate(-110px, 0);
+  -webkit-transform: translate(-110px, -50px);
+          transform: translate(-110px, -50px);
   opacity: 1;
 }
 
 .circle .logo {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: url("../../image/svg/play.svg");
   background-size: contain;
   background-position: center;
@@ -954,8 +990,8 @@ header .header .responHeader {
   position: absolute;
   left: 50%;
   top: 9%;
-  -webkit-transform-origin: 0 100px;
-          transform-origin: 0 100px;
+  -webkit-transform-origin: 0 80px;
+          transform-origin: 0 80px;
 }
 
 .hero {
@@ -997,6 +1033,8 @@ header .header .responHeader {
   .circle {
     width: 150px;
     height: 140px;
+    -webkit-transform: translate(-70px, 0) !important;
+            transform: translate(-70px, 0) !important;
   }
   .circle .logo {
     width: 100%;
@@ -1012,6 +1050,9 @@ header .header .responHeader {
   .hero {
     height: 100%;
     padding: 20px 0;
+  }
+  .hero::before {
+    top: 80px;
   }
   .heroFlex {
     display: block;
@@ -1038,6 +1079,8 @@ header .header .responHeader {
 @media (max-width: 900px) {
   .hero .circle {
     left: 55%;
+    -webkit-transform: translate(-110px, 0) !important;
+            transform: translate(-110px, 0) !important;
   }
   .hero::before {
     top: 70px;
@@ -1059,6 +1102,9 @@ header .header .responHeader {
   .hero__rightSide .heroForm .heroForm__form-input {
     font-size: 14px;
     padding: 10px 16px;
+  }
+  .hero__rightSide .heroForm .heroForm__form-lable {
+    font-size: 14px;
   }
   .hero__rightSide .heroForm .heroForm__form-submit {
     font-size: 14px;
@@ -1730,6 +1776,14 @@ header .header .responHeader {
 
 .contact__form-flex-input:first-child {
   margin-right: 20px;
+}
+
+.contact__form-lable {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ACACAC;
 }
 
 .contact__form-input {
