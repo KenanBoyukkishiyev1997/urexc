@@ -15,6 +15,8 @@ export function carusel() {
         touchThreshold: 50, // Set a higher value for touchThreshold
         autoplaySpeed:1000, //  Slide Delay
         speed:800,
+        variableWidth: true,
+
         easing:"linear",
         lazyLoad: 'progressive',
         // variableWidth: true,

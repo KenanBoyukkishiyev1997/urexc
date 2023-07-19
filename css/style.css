@@ -1276,6 +1276,10 @@ header .header .responHeader {
   padding: 50px 0;
 }
 
+.slider .slick-slide {
+  margin-right: 20px;
+}
+
 .slider__itemTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1341,10 +1345,6 @@ header .header .responHeader {
   background-color: #21364b;
   color: #fff;
   border: 1px solid #21364b;
-}
-
-.sliderCarusel__box {
-  padding: 0 20px;
 }
 
 .sliderCarusel__box-price {
