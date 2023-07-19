@@ -746,6 +746,19 @@ header .header .responHeader {
   color: #acacac;
 }
 
+.hero__rightSide .heroForm__form-lable::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 20px;
+  top: 65%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-image: url("../../image/svg/sectiondrop.svg");
+}
+
 .hero__rightSide .heroForm__form-input {
   width: 340px;
   border-radius: 20px;
@@ -1784,6 +1797,19 @@ header .header .responHeader {
   font-weight: 500;
   line-height: 18px;
   color: #ACACAC;
+}
+
+.contact__form-lable::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-image: url("../../image/contact/svg/dropdown.svg");
 }
 
 .contact__form-input {
