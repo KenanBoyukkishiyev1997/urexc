@@ -6,8 +6,6 @@
     background-color: #21364b;
     position: relative;
     height: 1000px;
-
-    background-position: right top;
     background-image: url("../../image/pattern.png");
     background-repeat: no-repeat;
 
@@ -21,6 +19,8 @@
         @include hero-poligon;
         background-color: #21364b;
        z-index: -1;
+       filter: drop-shadow( -1px -23px 50px 0px #00000066);
+
     }
 
     &Flex {
