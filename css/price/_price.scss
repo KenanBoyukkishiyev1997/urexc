@@ -200,6 +200,17 @@ padding: 12px 24px;
             text-align: center;
             margin-bottom: 10px;
 
+            &-flex{
+                display: block;
+            }
+
+            &-popular{
+width: 100%;
+display: flex;
+align-items: center;
+margin: auto;      
+justify-content: center;      }
+
             &:hover {
                 transform: translateY(0px);
             }

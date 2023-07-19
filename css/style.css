@@ -981,8 +981,8 @@ header .header .responHeader {
   background-position: center;
   background-repeat: no-repeat;
   left: 55%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) rotate(calc(var(--rotation, 0) * 12.5deg));
+          transform: translateX(-50%) rotate(calc(var(--rotation, 0) * 12.5deg));
 }
 
 .circle .text {
@@ -1714,6 +1714,22 @@ header .header .responHeader {
     margin-right: 0;
     text-align: center;
     margin-bottom: 10px;
+  }
+  .price__box-flex {
+    display: block;
+  }
+  .price__box-popular {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .price__box:hover {
     -webkit-transform: translateY(0px);
