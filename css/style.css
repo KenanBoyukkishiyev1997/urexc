@@ -993,7 +993,7 @@ header .header .responHeader {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   -webkit-animation: textRotation 25s linear infinite;
           animation: textRotation 25s linear infinite;
 }
