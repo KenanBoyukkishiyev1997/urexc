@@ -430,9 +430,13 @@ template {
   }
 }
 
-.logo__box .logo {
-  width: 60px;
-  height: 62px;
+.logo__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__list {
@@ -971,8 +975,8 @@ header .header .responHeader {
 
 .circle .logo {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background: url("../../image/svg/play.svg");
   background-size: contain;
   background-position: center;
@@ -1030,6 +1034,7 @@ header .header .responHeader {
   height: 1000px;
   background-image: url("../../image/pattern.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero::before {
@@ -1043,8 +1048,9 @@ header .header .responHeader {
           clip-path: polygon(6.809% 4.757%, 6.809% 4.757%, 6.267% 4.8%, 5.754% 4.922%, 5.275% 5.119%, 4.838% 5.382%, 4.449% 5.705%, 4.115% 6.082%, 3.844% 6.506%, 3.641% 6.971%, 3.515% 7.469%, 3.471% 7.994%, 3.471% 86.44%, 3.471% 86.44%, 3.515% 86.965%, 3.641% 87.463%, 3.844% 87.927%, 4.115% 88.351%, 4.449% 88.728%, 4.838% 89.052%, 5.275% 89.315%, 5.754% 89.511%, 6.267% 89.634%, 6.809% 89.676%, 36.048% 89.676%, 36.048% 89.676%, 36.891% 89.747%, 37.695% 89.949%, 38.46% 90.267%, 39.187% 90.685%, 39.875% 91.189%, 40.525% 91.761%, 41.137% 92.388%, 41.711% 93.053%, 42.248% 93.741%, 42.748% 94.436%, 42.748% 94.436%, 43.255% 95.097%, 43.824% 95.706%, 44.45% 96.26%, 45.129% 96.754%, 45.857% 97.184%, 46.629% 97.545%, 47.44% 97.834%, 48.286% 98.046%, 49.163% 98.176%, 50.066% 98.22%, 50.066% 98.22%, 50.97% 98.176%, 51.847% 98.046%, 52.693% 97.834%, 53.504% 97.545%, 54.276% 97.184%, 55.004% 96.754%, 55.683% 96.26%, 56.309% 95.706%, 56.878% 95.097%, 57.385% 94.436%, 57.385% 94.436%, 57.885% 93.741%, 58.422% 93.053%, 58.996% 92.388%, 59.608% 91.761%, 60.258% 91.189%, 60.946% 90.685%, 61.673% 90.267%, 62.438% 89.949%, 63.242% 89.747%, 64.085% 89.676%, 93.391% 89.676%, 93.391% 89.676%, 93.933% 89.634%, 94.446% 89.511%, 94.925% 89.315%, 95.362% 89.052%, 95.751% 88.728%, 96.085% 88.351%, 96.356% 87.927%, 96.559% 87.463%, 96.685% 86.965%, 96.729% 86.44%, 96.729% 7.994%, 96.729% 7.994%, 96.685% 7.469%, 96.559% 6.971%, 96.356% 6.506%, 96.085% 6.082%, 95.751% 5.705%, 95.362% 5.382%, 94.925% 5.119%, 94.446% 4.922%, 93.933% 4.8%, 93.391% 4.757%, 6.809% 4.757%);
   background-color: #21364b;
   z-index: -1;
-  -webkit-filter: drop-shadow(-1px -23px 50px 0px #00000066);
-          filter: drop-shadow(-1px -23px 50px 0px #00000066);
+  -webkit-box-shadow: 0px 5px 15px rgba(33, 54, 75, 0.5);
+          box-shadow: 0px 5px 15px rgba(33, 54, 75, 0.5);
+  /* Add your desired box shadow */
 }
 
 .heroFlex {
@@ -1103,6 +1109,9 @@ header .header .responHeader {
   .hero__rightSide .heroForm {
     width: 100%;
   }
+  .hero__rightSide .heroForm__header-text {
+    font-size: 18px;
+  }
   .hero__rightSide .heroForm__form-submit, .hero__rightSide .heroForm__form-input {
     width: 80%;
   }
@@ -1147,8 +1156,6 @@ header .header .responHeader {
 .about {
   background-color: #f8f8f8;
   position: relative;
-  z-index: -2;
-  padding: 0 0 50px;
 }
 
 .about__page {
@@ -1200,14 +1207,24 @@ header .header .responHeader {
   font-size: 16px;
   font-weight: 600;
   line-height: 25px;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
   -webkit-box-shadow: 0px 1px 2px 0px #1018280d;
           box-shadow: 0px 1px 2px 0px #1018280d;
   cursor: pointer;
 }
 
+.about__box-btn:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background-color: #21364b;
+  color: #fff;
+  border: 1px solid #21364b;
+}
+
 @media (max-width: 1200px) {
   .about {
-    padding: 80px 0 0;
+    padding: 150px 0 0;
   }
   .about__page {
     -ms-flex-wrap: wrap;
@@ -1312,6 +1329,16 @@ header .header .responHeader {
   letter-spacing: 0em;
   text-align: center;
   color: #21364b;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+.slider__itemTitle-btn:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background-color: #21364b;
+  color: #fff;
+  border: 1px solid #21364b;
 }
 
 .sliderCarusel__box {
@@ -1378,10 +1405,19 @@ header .header .responHeader {
   left: 30px;
 }
 
+.sliderCarusel .category img {
+  width: 20px;
+  height: 22px;
+}
+
 .sliderCarusel__image {
   position: relative;
   width: 100%;
   border-radius: 30px;
+}
+
+.sliderCarusel__image img {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -2153,5 +2189,12 @@ header .header .responHeader {
 #dropdown.valid-option,
 #dropdownFirst.valid-option {
   color: black;
+}
+
+.space {
+  z-index: -2;
+  position: relative;
+  height: 120px;
+  background-color: #f8f8f8;
 }
 /*# sourceMappingURL=style.css.map */
