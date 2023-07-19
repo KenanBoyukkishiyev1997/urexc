@@ -1871,6 +1871,9 @@ header .header .responHeader {
   .contact__form input:first-child {
     margin-right: 0px;
   }
+  .contact__form-lable {
+    font-size: 14px;
+  }
   .contact__form-flex {
     display: block;
   }
