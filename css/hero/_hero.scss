@@ -7,8 +7,9 @@
     position: relative;
     height: 1000px;
 
-
-    
+    background-position: right top;
+    background-image: url("../../image/pattern.png");
+    background-repeat: no-repeat;
 
     &::before {
         content: "";
@@ -19,9 +20,7 @@
         height: 100%;
         @include hero-poligon;
         background-color: #21364b;
-        background-position: right top;
-        background-image: url("../../image/pattern.png");
-        background-repeat: no-repeat;
+       z-index: -1;
     }
 
     &Flex {

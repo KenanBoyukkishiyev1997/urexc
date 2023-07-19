@@ -1,5 +1,7 @@
 .about {
     background-color: #f8f8f8;
+    position: relative;
+    z-index: -2;
     padding: 0 0 50px;
     &__page {
         padding-top: 100px;
