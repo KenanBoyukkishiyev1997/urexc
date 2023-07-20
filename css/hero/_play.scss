@@ -11,14 +11,13 @@
     left: 50%;
     transform: translate(0%, 55px);
     transition: transform 0.3s ease-in-out;
-    opacity: 0;
+   
 background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../../image/icon/play.svg');
 
     &.scroll-up {
         transform: translate(-50%, -55px);
-        opacity: 1;
     }
 
     .logo {

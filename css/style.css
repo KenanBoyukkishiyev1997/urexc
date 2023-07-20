@@ -988,7 +988,6 @@ header .header .responHeader {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  opacity: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../../image/icon/play.svg");
@@ -997,7 +996,6 @@ header .header .responHeader {
 .circle.scroll-up {
   -webkit-transform: translate(-50%, -55px);
           transform: translate(-50%, -55px);
-  opacity: 1;
 }
 
 .circle .logo {
@@ -1099,8 +1097,12 @@ header .header .responHeader {
   .circle {
     width: 130px;
     height: 130px;
-    -webkit-transform: translate(-50%, 0) !important;
-            transform: translate(-50%, 0) !important;
+    -webkit-transform: translate(0%, 120%);
+            transform: translate(0%, 120%);
+  }
+  .circle.scroll-up {
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
   .circle .logo {
     width: 100%;
@@ -1150,8 +1152,6 @@ header .header .responHeader {
 @media (max-width: 900px) {
   .hero .circle {
     left: 50%;
-    -webkit-transform: translate(-50%, 0) !important;
-            transform: translate(-50%, 0) !important;
   }
   .hero::before {
     top: 70px;
