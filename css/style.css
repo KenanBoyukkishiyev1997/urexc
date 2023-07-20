@@ -1916,6 +1916,8 @@ header .header .responHeader {
   font-weight: 500;
   line-height: 18px;
   color: #acacac;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .contact__form-img {
@@ -1949,7 +1951,7 @@ header .header .responHeader {
   border: 1px solid #f0f0f3;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 18px;
   color: #000000;
   margin-bottom: 12px;
@@ -2060,9 +2062,6 @@ header .header .responHeader {
   }
   .contact__form input:first-child {
     margin-right: 0px;
-  }
-  .contact__form-lable {
-    font-size: 14px;
   }
   .contact__form-flex {
     display: block;

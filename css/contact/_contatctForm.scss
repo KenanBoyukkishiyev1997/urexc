@@ -24,6 +24,8 @@
         font-weight: 500;
         line-height: 18px;
         color: #acacac;
+        transition: 0.2s ease-out;
+
     }
 
     &-img {
@@ -55,7 +57,7 @@
         border: 1px solid #f0f0f3;
         font-family: "Poppins", sans-serif;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 18px;
         color: #000000;
         margin-bottom: 12px;
