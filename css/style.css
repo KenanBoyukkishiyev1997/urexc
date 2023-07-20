@@ -996,8 +996,8 @@ header .header .responHeader {
   font-weight: 500;
   color: #fff;
   font-size: 16px;
-  -webkit-animation: textRotation 25s linear infinite;
-          animation: textRotation 25s linear infinite;
+  -webkit-animation: textRotation 35s linear infinite;
+          animation: textRotation 35s linear infinite;
 }
 
 @-webkit-keyframes textRotation {
