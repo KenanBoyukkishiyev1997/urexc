@@ -36,9 +36,12 @@
                 right: 20px;
                 top: 50%;
                 transform: translateY(-50%);
+                transition: transform .3s ease-in;
                 &.show {
                     transform: rotate(180deg);
-                    top: 26%;
+                    top: 40%;
+                    transition: transform .3s ease-in-out;
+
                 }
             }
 
@@ -107,15 +110,15 @@
         background-color: #02172c;
         width: 54px;
         height: 120px;
+        padding: 12px 17px;
         border-radius: 50px;
         position: absolute;
         right: 0;
         cursor: pointer;
-        padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
         &-text {
             color: #fff;

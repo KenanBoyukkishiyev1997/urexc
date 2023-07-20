@@ -782,12 +782,20 @@ header .header .responHeader {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
 }
 
 .hero__rightSide .heroForm__form-img.show {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 26%;
+  top: 40%;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 .hero__rightSide .heroForm__form-lable {
@@ -885,11 +893,11 @@ header .header .responHeader {
   background-color: #02172c;
   width: 54px;
   height: 120px;
+  padding: 12px 17px;
   border-radius: 50px;
   position: absolute;
   right: 0;
   cursor: pointer;
-  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,9 +908,8 @@ header .header .responHeader {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .hero__rightSide .scroll-text {
@@ -975,8 +982,8 @@ header .header .responHeader {
   border-radius: 50%;
   bottom: -107px;
   left: 50%;
-  -webkit-transform: translate(-50%, 400px);
-          transform: translate(-50%, 400px);
+  -webkit-transform: translate(0%, 55px);
+          transform: translate(0%, 55px);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -988,8 +995,8 @@ header .header .responHeader {
 }
 
 .circle.scroll-up {
-  -webkit-transform: translate(-100px, -50px);
-          transform: translate(-100px, -50px);
+  -webkit-transform: translate(-50%, -55px);
+          transform: translate(-50%, -55px);
   opacity: 1;
 }
 
@@ -1878,7 +1885,9 @@ header .header .responHeader {
 }
 
 .contact__form {
-  width: 600px;
+  position: relative;
+  width: 55%;
+  /* Styles to apply when textarea is focused */
 }
 
 .contact__form-title {
@@ -1917,12 +1926,20 @@ header .header .responHeader {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .contact__form-img.show {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 26%;
+  top: 40%;
 }
 
 .contact__form-input {
@@ -1940,23 +1957,57 @@ header .header .responHeader {
 }
 
 .contact__form-input::-webkit-input-placeholder {
+  padding-top: 15px;
   color: #acacac;
 }
 
 .contact__form-input:-ms-input-placeholder {
+  padding-top: 15px;
   color: #acacac;
 }
 
 .contact__form-input::-ms-input-placeholder {
+  padding-top: 15px;
   color: #acacac;
 }
 
 .contact__form-input::placeholder {
+  padding-top: 15px;
   color: #acacac;
 }
 
 .contact__form-input:first-child {
   margin-right: 20px;
+}
+
+.contact__form-group {
+  position: relative;
+  width: 100%;
+}
+
+.contact__form-group:first-child {
+  margin-right: 20px;
+}
+
+.contact__form-group label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #acacac;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  pointer-events: none;
+}
+
+.contact__form-group label.active {
+  top: -3px;
+  font-size: 10px;
+  color: #acacac;
+  padding: 2px 5px;
 }
 
 .contact__form-end {

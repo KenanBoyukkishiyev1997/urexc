@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
     <title>Urexc ~ Home</title>
     <link rel="stylesheet" href="./css/style.css" />
@@ -17,9 +20,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
-
-
-   
   </head>
   <body>
     <div class="wrapper">
@@ -42,10 +42,9 @@
             </ul>
 
             <div class="logo__box">
-                <!-- <img class="logoArrow" src="./image/logo/logoArrow.svg" alt="logoArrow">
+              <!-- <img class="logoArrow" src="./image/logo/logoArrow.svg" alt="logoArrow">
                 <img class="logoText" src="./image/logo/logoText.svg" alt="logoArrow"> -->
-<img  class="logoArrow"  src="./image/logo/logo.svg" alt="logo">
-
+              <img class="logoArrow" src="./image/logo/logo.svg" alt="logo" />
             </div>
 
             <div class="register">
@@ -127,17 +126,21 @@
                     </div>
 
                     <div class="heroForm__form-group">
-                    
-
                       <div class="custom-select heroForm__form-input">
-                        <div class="select-label heroForm__form-lable">Select an option</div>
+                        <div class="select-label heroForm__form-lable">
+                          Select an option
+                        </div>
                         <ul class="options">
                           <li data-value="option1">Option 1</li>
                           <li data-value="option2">Option 2</li>
                           <li data-value="option3">Option 3</li>
                         </ul>
-                        <input type="hidden" name="selected-option" value="">
-                        <img class="heroForm__form-img" src="./image/svg/sectiondrop.svg" alt="sectiondrop">
+                        <input type="hidden" name="selected-option" value="" />
+                        <img
+                          class="heroForm__form-img"
+                          src="./image/svg/sectiondrop.svg"
+                          alt="sectiondrop"
+                        />
                       </div>
                     </div>
 
@@ -153,7 +156,7 @@
                 <div class="scroll__box">
                   <a href="#about">
                     <div class="scroll">
-                      <span class="scroll-text">scroll</span>
+                      <span class="scroll-text">Scroll</span>
                       <span
                         ><img
                           class="scroll-icon"
@@ -168,13 +171,13 @@
             <div class="circle">
               <div class="logo"></div>
               <div class="text">
-                <p>Explore More - Explore  More -    </p>
+                <p>Explore More - Explore More -</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-<div class="space"></div>
+      <div class="space"></div>
       <section id="about" class="about">
         <div class="container">
           <div class="about__page">
@@ -240,7 +243,7 @@
               <p class="sliderCarusel__box-title">
                 Tranquil Haven in the Woods
               </p>
-              <p class="sliderCarusel__box-address"> 
+              <p class="sliderCarusel__box-address">
                 103 Wright CourtBurien, WA 98168
               </p>
             </div>
@@ -475,13 +478,14 @@
                 <div class="contact__box-info">
                   <span>
                     <img src="./image/contact/svg/phone.svg" alt="phone" />
-                    <a href="tel:+1 206-214-2298">+1 206-214-2298</a>                  </span>
+                    <a href="tel:+1 206-214-2298">+1 206-214-2298</a>
+                  </span>
                   <span>
                     <img src="./image/contact/svg/mail.svg" alt="mail" />
-                    
-                    <a href="mailto:demo@gmail.com">demo@gmail.com</a>                  </span>
 
+                    <a href="mailto:demo@gmail.com">demo@gmail.com</a>
                   </span>
+
                   <span>
                     <img src="./image/contact/svg/marker.svg" alt="marker" />
                     132 Dartmouth Street Boston, Massachusetts 02156 United
@@ -493,49 +497,43 @@
             <form class="contact__form">
               <h1 class="contact__form-title">Contact Us</h1>
               <div class="contact__form-flex">
-                <input
-                  type="text"
-                  class="contact__form-input"
-                  placeholder="Name"
+                <div class="contact__form-group">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" class="contact__form-input" />
+                </div>
 
-                />
-                <!-- <select
-                id="dropdown"
-                
-                class="contact__form-input"
-              >
-              <option value="" disabled selected>Mövzu</option>
-              <option value="1">Some option</option>
-              <option value="2">Another option</option>
-              <option value="3">Potato</option>
-              </select>     -->
+                <div class="custom-select contact__form-input">
+                  <div class="select-label contact__form-lable">Mövzu</div>
+                  <ul class="options">
+                    <li data-value="option1">Option 1</li>
+                    <li data-value="option2">Option 2</li>
+                    <li data-value="option3">Option 3</li>
+                  </ul>
+                  <input type="hidden" name="selected-option" value="" />
 
-              <div class="custom-select contact__form-input">
-                <div class="select-label contact__form-lable">Mövzu</div>
-                <ul class="options">
-                  <li data-value="option1">Option 1</li>
-                  <li data-value="option2">Option 2</li>
-                  <li data-value="option3">Option 3</li>
-                </ul>
-                <input type="hidden" name="selected-option" value="">
-
-                <img class="contact__form-img" src="./image/contact/svg/dropdown.svg" alt="sectiondrop">
-
+                  <img
+                    class="contact__form-img"
+                    src="./image/contact/svg/dropdown.svg"
+                    alt="sectiondrop"
+                  />
+                </div>
               </div>
-            
-            </div>
+              <div class="contact__form-group">
+                <label for="email">E-mail</label>
 
-              <input placeholder="E-mail" type="email" class="contact__form-input"  
-              />
+                <input type="email" id="email" class="contact__form-input" />
+              </div>
 
-              <textarea
-
-                class="contact__form-input"
-                name=""
-                placeholder="Mesajınızı daxil edin.."
-                id=""
-                rows="4"
-              ></textarea>
+              <div class="contact__form-group">
+                <label for="message">Mesaj</label>
+                <textarea
+                  class="contact__form-input"
+                  name=""
+                  placeholder="Mesajınızı daxil edin.."
+                  id="message"
+                  rows="4"
+                ></textarea>
+              </div>
 
               <div class="contact__form-end">
                 <button class="contact__form-btn" type="submit">
@@ -563,15 +561,14 @@
               <div class="footer__first-text">
                 <span
                   ><img src="./image/footer/icon/phone.svg" alt="phone" />
-                  <a href="tel:+1 206-214-2298">+1 206-214-2298</a>  </span
-                >
+                  <a href="tel:+1 206-214-2298">+1 206-214-2298</a>
+                </span>
               </div>
               <div class="footer__first-text">
                 <span
                   ><img src="./image/footer/icon/letter.svg" alt="letter" />
-                  <a href="mailto:support@support.com">support@support.com</a> 
-                  </span
-                >
+                  <a href="mailto:support@support.com">support@support.com</a>
+                </span>
               </div>
             </div>
             <div class="footer__second">
@@ -646,23 +643,24 @@
             </div>
           </div>
         </div>
-
-       
       </footer>
 
       <div class="copy">
         <div class="copy__flex">
-        
-                    <h3 class="copy__title">© Urexc – All rights reserved</h3>
-                    <ul class="copy__list">
-                        <li class="copy__item"><a class="copy__link" href="#">Terms and Conditions</a></li>
-                        <li class="copy__item"><a class="copy__link" href="#">Privacy Policy</a></li>
-                        <li class="copy__item"><a class="copy__link" href="#">Disclaimer</a></li>
-                    </ul>
-                </div>
-        
-        
-                </div>
+          <h3 class="copy__title">© Urexc – All rights reserved</h3>
+          <ul class="copy__list">
+            <li class="copy__item">
+              <a class="copy__link" href="#">Terms and Conditions</a>
+            </li>
+            <li class="copy__item">
+              <a class="copy__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="copy__item">
+              <a class="copy__link" href="#">Disclaimer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -674,7 +672,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script src="./js/script.js" type="module"></script>
-
-    
   </body>
 </html>
