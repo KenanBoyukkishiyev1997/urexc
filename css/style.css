@@ -773,25 +773,29 @@ header .header .responHeader {
   margin-top: 30px;
 }
 
+.hero__rightSide .heroForm__form-img {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hero__rightSide .heroForm__form-img.show {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 26%;
+}
+
 .hero__rightSide .heroForm__form-lable {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   color: #acacac;
-}
-
-.hero__rightSide .heroForm__form-lable::before {
-  content: '';
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  right: 20px;
-  top: 65%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-image: url("../../image/svg/sectiondrop.svg");
 }
 
 .hero__rightSide .heroForm__form-input {
@@ -1902,11 +1906,10 @@ header .header .responHeader {
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
-  color: #ACACAC;
+  color: #acacac;
 }
 
-.contact__form-lable::before {
-  content: '';
+.contact__form-img {
   position: absolute;
   height: 20px;
   width: 20px;
@@ -1914,8 +1917,12 @@ header .header .responHeader {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-image: url("../../image/contact/svg/dropdown.svg");
+}
+
+.contact__form-img.show {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 26%;
 }
 
 .contact__form-input {
@@ -1933,19 +1940,19 @@ header .header .responHeader {
 }
 
 .contact__form-input::-webkit-input-placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .contact__form-input:-ms-input-placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .contact__form-input::-ms-input-placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .contact__form-input::placeholder {
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .contact__form-input:first-child {
@@ -1968,7 +1975,7 @@ header .header .responHeader {
   border-radius: 11px;
   color: #fff;
   background-color: #21364b;
-  border: 1px solid #21364B;
+  border: 1px solid #21364b;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 600;
