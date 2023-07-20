@@ -382,22 +382,31 @@ template {
 }
 
 .custom-select .options {
+  border-radius: 20px;
+  margin: 20px 0px 0px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1;
   list-style: none;
-  margin: 0;
   padding: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #F6F6F6;
+  border: 1px solid #F6F6F6;
   border-radius: 5px;
   width: 100%;
+}
+
+.custom-select .options.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .custom-select .options li {
