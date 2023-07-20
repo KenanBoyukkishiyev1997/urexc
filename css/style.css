@@ -982,8 +982,8 @@ header .header .responHeader {
   border-radius: 50%;
   bottom: -107px;
   left: 50%;
-  -webkit-transform: translate(0%, 55px);
-          transform: translate(0%, 55px);
+  -webkit-transform: translate(100%, 120%);
+          transform: translate(100%, 120%);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
