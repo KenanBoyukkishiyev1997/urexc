@@ -692,6 +692,12 @@ header .header .responHeader {
   }
 }
 
+@media (max-width: 450px) {
+  .menu-drawer {
+    width: 100%;
+  }
+}
+
 .hero__leftSide {
   padding-top: 245px;
   width: 580px;
