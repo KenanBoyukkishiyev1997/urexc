@@ -780,6 +780,8 @@ header .header .responHeader {
   width: 20px;
   right: 20px;
   top: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: -webkit-transform .3s ease-in;
@@ -2364,6 +2366,19 @@ header .header .responHeader {
   margin: 0 auto;
   max-width: 1400px;
   padding: 20px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-left {

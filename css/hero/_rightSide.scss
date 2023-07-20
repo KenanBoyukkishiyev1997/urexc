@@ -35,6 +35,7 @@
                 width: 20px;
                 right: 20px;
                 top: 50%;
+                object-fit: contain;
                 transform: translateY(-50%);
                 transition: transform .3s ease-in;
                 &.show {

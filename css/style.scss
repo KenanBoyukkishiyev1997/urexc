@@ -17,6 +17,12 @@
 padding: 20px;
 }
 
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .container-left{
     margin:  0 0 0 auto;
 }
