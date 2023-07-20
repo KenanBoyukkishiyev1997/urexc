@@ -1,17 +1,20 @@
 .circle {
-    background: #000;
+    // background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     bottom: -107px;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, 400px);
     transition: transform 0.3s ease-in-out;
     opacity: 0;
+background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../image/icon/play.svg');
 
     &.scroll-up {
         transform: translate(-110px, -50px);
@@ -20,13 +23,13 @@
 
     .logo {
         position: absolute;
-        width: 70px;
-        height:70px;
+        width: 65px;
+        height:65px;
         background: url("../../image/svg/play.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        left: 55%;
+        left: 50%;
         transform: translateX(-50%) rotate(calc(var(--rotation, 0) * 12.5deg));
     }
 
@@ -38,7 +41,7 @@
          font-family: "Poppins", sans-serif;
         font-weight: 500;
         color: #fff;
-        font-size: 14px;
+        font-size: 16px;
         animation: textRotation 25s linear infinite;
     }
 
@@ -53,8 +56,8 @@
 
     .text span {
         position: absolute;
-        left: 51%;
-        top: 6%;
-        transform-origin: 0 80px;
+        left: 50%;
+        top: 7%;
+        transform-origin: 0 85px;
     }
 }

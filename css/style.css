@@ -941,7 +941,6 @@ header .header .responHeader {
 }
 
 .circle {
-  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -952,11 +951,11 @@ header .header .responHeader {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   bottom: -107px;
-  left: 50%;
+  left: 52%;
   -webkit-transform: translate(-50%, 400px);
           transform: translate(-50%, 400px);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -964,6 +963,9 @@ header .header .responHeader {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   opacity: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../image/icon/play.svg");
 }
 
 .circle.scroll-up {
@@ -974,13 +976,13 @@ header .header .responHeader {
 
 .circle .logo {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   background: url("../../image/svg/play.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  left: 55%;
+  left: 50%;
   -webkit-transform: translateX(-50%) rotate(calc(var(--rotation, 0) * 12.5deg));
           transform: translateX(-50%) rotate(calc(var(--rotation, 0) * 12.5deg));
 }
@@ -993,7 +995,7 @@ header .header .responHeader {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-animation: textRotation 25s linear infinite;
           animation: textRotation 25s linear infinite;
 }
@@ -1022,10 +1024,10 @@ header .header .responHeader {
 
 .circle .text span {
   position: absolute;
-  left: 51%;
-  top: 6%;
-  -webkit-transform-origin: 0 80px;
-          transform-origin: 0 80px;
+  left: 50%;
+  top: 7%;
+  -webkit-transform-origin: 0 85px;
+          transform-origin: 0 85px;
 }
 
 .hero {
@@ -1035,8 +1037,8 @@ header .header .responHeader {
   background-image: url("../../image/pattern.png");
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 5px 15px rgba(33, 54, 75, 0.5);
-          box-shadow: 0px 5px 15px rgba(33, 54, 75, 0.5);
+  -webkit-box-shadow: inset 0px 5px 15px rgba(33, 54, 75, 0.5);
+          box-shadow: inset 0px 5px 15px rgba(33, 54, 75, 0.5);
   /* Add your desired box shadow */
 }
 
@@ -1277,7 +1279,7 @@ header .header .responHeader {
 }
 
 .slider .slick-slide {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .slider__itemTitle {
@@ -1366,7 +1368,7 @@ header .header .responHeader {
   padding-bottom: 5px;
 }
 
-.sliderCarusel__box-adress {
+.sliderCarusel__box-address {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
