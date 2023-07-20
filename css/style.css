@@ -2216,6 +2216,7 @@ header .header .responHeader {
 }
 
 .copy {
+  height: auto;
   background-color: #000;
 }
 
@@ -2229,6 +2230,7 @@ header .header .responHeader {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px;
 }
 
 .copy__title {
@@ -2262,6 +2264,26 @@ header .header .responHeader {
   letter-spacing: 0em;
   text-align: right;
   color: #aaa;
+}
+
+@media screen and (max-width: 1200px) {
+  .copy__flex {
+    display: block;
+  }
+  .copy__title {
+    text-align: center;
+  }
+  .copy__link {
+    text-align: center;
+    margin: auto;
+  }
+  .copy__item {
+    margin: 0;
+    width: 100%;
+  }
+  .copy__list {
+    display: block;
+  }
 }
 
 .container {

@@ -168,15 +168,15 @@
 }
 
 .copy {
-   
+   height: auto;
     background-color: #000;
     &__flex {
         display: flex;
        align-items: center;
         justify-content: space-between;
+        padding: 0 20px;
     }
     &__title {
-        //styleName: Paragraph - Regular;
         font-family: "Poppins", sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -187,8 +187,6 @@
     &__list{
         list-style: none;
         display: flex;
-
-
     }
 
     &__item{
@@ -213,3 +211,33 @@ text-align: right;
 
     }
 }
+
+
+@media screen and (max-width:1200px) {
+    .copy {
+   
+        &__flex {
+            display: block;
+        }
+
+        &__title{
+            text-align: center;
+        }
+
+        &__link{
+            text-align: center;
+            margin: auto;
+        }
+
+        &__item{
+            margin: 0;
+           
+            width: 100%;
+        }
+
+        &__list{
+            display: block;
+        }
+    }
+}
+
