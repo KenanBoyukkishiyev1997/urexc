@@ -2085,6 +2085,9 @@ header .header .responHeader {
 }
 
 @media (max-width: 900px) {
+  .contact__form-btn {
+    font-size: 14px;
+  }
   .contact__info {
     padding: 30px;
     height: 400px;
